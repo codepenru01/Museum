@@ -1,0 +1,219 @@
+.journey {
+  margin: 75px 0;
+}
+
+.journey__top {
+  margin-bottom: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jurney__title {
+  font-family: 'Forum', display;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9d8665;
+}
+
+.journey__text-box {
+  max-width: 720px;
+}
+
+.journey__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: #000000;
+}
+
+.journey__iframe-list {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.journey__video {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@include resposible(1400px) {
+  .journey__top {
+    flex-direction: column;
+  }
+  
+  .journey__text-box {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .iframe-item__video {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@include resposible(1273px) {
+  .journey__video {
+    height: 504px;
+  }
+  
+  .iframe-item__video {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+@include resposible(1150px) {
+  .iframe-item__video {
+    width: 325px;
+    height: 180px;
+  }
+}
+
+@include resposible(1024px) {
+  .journey {
+    margin: 60px 0;
+  }
+  
+  .journey__top {
+    margin-bottom: 40px;
+    flex-direction: row;
+  }
+  
+  .jurney__title {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  
+  .iframe-item__video {
+    width: 300px;
+    height: 170px;
+  }
+  
+  .journey__text-box {
+    display: none;
+  }
+}
+
+@include resposible(950px) {
+  .iframe-item__video {
+    width: 250px;
+    height: 150px;
+  }
+  
+}
+
+@include resposible(810px) {
+  .journey {
+    margin-top: 40px;
+    margin-bottom: 81px;
+  }
+  
+  .journey__top {
+    margin-bottom: 20px;
+  }
+  
+  .jurney__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  
+  .journey__iframe-list {
+    margin-top: 21px;
+    justify-content: space-evenly;
+  }
+  
+  .journey__video {
+    height: 382px;
+  }
+  
+  .iframe-item:last-child {
+    display: none;
+  }
+  
+  .iframe-item__video {
+    width: 300px;
+    height: 170px;
+  }
+}
+
+@include resposible(664px) {
+  .journey__video {
+    height: 352px;
+  }
+  
+  .journey__iframe-list {
+    margin-top: 21px;
+    justify-content: space-around;
+  }
+  
+  .iframe-item__video {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+@include resposible(560px) {
+  .journey {
+    margin-top: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .journey__video {
+    height: 302px;
+  }
+  
+  .journey__iframe-list {
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  
+  .iframe-item__video {
+    width: 220px;
+    height: 130px;
+  }
+}
+
+@include resposible(485px) {
+  .journey__video {
+    height: 222px;
+  }
+  
+  .jurney__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  
+  .journey__iframe-list {
+    justify-content: space-around;
+  }
+  
+  .iframe-item__video {
+    width: 180px;
+    height: 101px;
+  }
+}
+
+@include resposible(410px) {
+  .journey__iframe-list {
+    flex-wrap: wrap;
+  }
+  
+  .iframe-item {
+    margin-bottom: 20px;
+  }
+  
+  .iframe-item__video {
+    width: 250px;
+    height: 150px;
+  }
+}

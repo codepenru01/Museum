@@ -1,0 +1,284 @@
+.explore {
+  padding: 75px 0;
+  background-color: $bg-color;
+}
+
+.explore__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.explore__left-content {
+  max-width: 660px;
+}
+
+.explore__title {
+  margin-bottom: 25px;
+  font-family: 'Forum', display;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.explore__line {
+  margin-bottom: 75px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #710707;
+}
+
+.explore__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.explore__text+.explore__text {
+  margin-top: 25px;
+}
+
+.explore__text strong {
+  font-weight: normal;
+  color: #caaa7d;
+}
+
+.explore__right-content {
+  position: relative;
+  width: 720px;
+  height: 700px;
+  background-image: url("../../img/bg-img-explore.png");
+  background-repeat: no-repeat;
+  background-size: 720px 700px;
+}
+
+.explore__img {
+  width: 440px;
+  height: 700px;
+}
+
+.explore__slider {
+  position: absolute;
+  right: 36%;
+  
+}
+
+@include resposible(1433px) {
+  .explore__inner {
+    flex-wrap: wrap;
+  }
+  
+  .explore__left-content {
+    margin-bottom: 62px;
+    max-width: 90%;
+  }
+  
+  .explore__right-content {
+    margin: 0 auto;
+  }
+}
+
+@include resposible(1024px) {
+  .explore {
+    padding: 60px 0;
+  }
+  
+  .explore__title {
+    margin-bottom: 20px;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 5px;
+  }
+  
+  .explore__line {
+    margin-bottom: 60px;
+  }
+  
+  .explore__left-content {
+    width: 100%;
+  }
+  
+  .explore__text+.explore__text {
+    margin-top: 1px;
+  }
+  
+  .explore__text:last-child {
+    display: none;
+  }
+}
+
+@include resposible(766px) {
+  .explore__right-content {
+    width: 700px;
+    height: 680px;
+    background-size: 700px 680px;
+  }
+  
+  .explore__img {
+    width: 420px;
+    height: 680px;
+  }
+  
+  .explore__slider {
+    right: 37%;
+    height: 680px;
+  }
+  
+}
+
+@include resposible(736px) {
+  .explore {
+    padding: 40px 0;
+  }
+  
+  .explore__left-content {
+    margin: 0;
+  }
+  
+  .explore__left-content p {
+    display: none;
+  }
+  
+  .explore__line {
+    margin-bottom: 40px;
+  }
+  
+  .explore__title {
+    
+    font-size: 40px;
+    line-height: 60px;
+  }
+  
+  .explore__right-content {
+    width: 600px;
+    height: 580px;
+    background-size: 600px 580px;
+  }
+  
+  .explore__img {
+    width: 360px;
+    height: 580px;
+  }
+  
+  .explore__slider {
+    right: 37%;
+    height: 580px;
+  }
+  
+}
+
+@include resposible(642px) {
+  .explore__right-content {
+    width: 500px;
+    height: 480px;
+    background-size: 500px 480px;
+  }
+  
+  .explore__img {
+    width: 300px;
+    height: 480px;
+  }
+  
+  .explore__slider {
+    right: 37%;
+    height: 480px;
+  }
+}
+
+@include resposible(537px) {
+  .explore__right-content {
+    width: 400px;
+    height: 380px;
+    background-size: 400px 380px;
+  }
+  
+  .explore__img {
+    width: 245px;
+    height: 380px;
+  }
+  
+  .explore__slider {
+    right: 36%;
+    height: 380px;
+  }
+}
+
+@include resposible(446px) {
+  .explore__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  
+}
+
+@include resposible(444px) {
+  .explore__right-content {
+    width: 380px;
+    height: 368px;
+    background-size: 380px 368px;
+  }
+  
+  .explore__img {
+    width: 230px;
+    height: 368px;
+  }
+  
+  .explore__slider {
+    right: 37%;
+    width: 20px;
+    height: 368px;
+  }
+}
+
+@include resposible(419px) {
+  .explore__right-content {
+    width: 350px;
+    height: 338px;
+    background-size: 350px 338px;
+  }
+  
+  .explore__img {
+    width: 214px;
+    height: 338px;
+  }
+  
+  .explore__slider {
+    right: 36%;
+    width: 20px;
+    height: 338px;
+  }
+}
+
+@include resposible(390px) {
+  .explore__right-content {
+    width: 250px;
+    height: 258px;
+    background-size: 250px 258px;
+  }
+  
+  .explore__img {
+    width: 152px;
+    height: 258px;
+  }
+  
+  .explore__slider {
+    right: 36%;
+    width: 15px;
+    height: 258px;
+  }
+}
+
+@include resposible(290px) {
+  .explore__slider {
+    right: 34%;
+    width: 15px;
+    height: 258px;
+  }
+}
